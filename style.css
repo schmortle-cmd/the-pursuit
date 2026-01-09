@@ -1,3 +1,20 @@
+.sidebar {
+  background: black;
+  color: white;
+  height: 100%;
+  width: 160px;
+  margin: 20px;
+  }
+
+.container {
+  display: flex; /* makes children go side by side */
+  }
+  
+.content {
+  flex: 1;
+  padding: 10px;
+  }
+
 body {
   background-color: black;
   color: white;
