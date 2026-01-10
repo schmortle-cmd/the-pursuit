@@ -1,17 +1,22 @@
 .sidebar {
   color: white;
   height: 100%;
-  width: 160px;
-  margin: 20px;
+  width: 250px;
+  margin: 20px auto;
   text-align: left;
+  padding-top: 5px;
+  border: 3px double white;
   }
 
 .container {
   display: flex;
+  justify-content: center;   /* center both horizontally */
+  align-items: flex-start;   /* align at the top */
+  max-width: 1000px;
+  margin: 0 auto;
   }
   
 .content {
-  flex: 1;
   padding: 10px;
   text-align: center;
   }
@@ -30,9 +35,27 @@ body {
   border: 3px double white;
   background-color: black;
   color: white;
-  width: 80%;
+  width: 500px;
   margin: 20px auto;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 0 15px white;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 90%;
+    order: 2;
+  }
+
+  .content {
+    order: 1;
+  }
+  
+  .box {
+    width: 90%;
+  }
 }
