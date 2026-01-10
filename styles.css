@@ -1,9 +1,17 @@
+.red { color: #FF0000; text-shadow: 0 0 20px #FF0000; }
+.green { color: #00FF00; text-shadow: 0 0 20px #00FF00; }
+.aqua { color: #00FFFF; text-shadow: 0 0 20px #00FFFF; }
+.yellow { color: #FFFF00; text-shadow: 0 0 20px #FFFF00; }
+.fuschia { color: #FF00FF; text-shadow: 0 0 20px #FF00FF; }
+.orange { color: #FFA500; text-shadow: 0 0 20px #FFA500; }
+
 .sidebar {
   color: white;
   height: 100%;
   width: 250px;
   margin: 20px auto;
   text-align: left;
+  font-family: "Times New Roman", Times, serif;
   padding-top: 5px;
   border: 3px double white;
   }
@@ -27,7 +35,6 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   color: white;
-  font-family: "Times New Roman", Times, serif;
   margin: 20px;
 }
 
@@ -39,6 +46,17 @@ body {
   margin: 20px auto;
   padding: 20px;
   text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.box-status {
+  border: 4px double red;
+  box-shadow: 0 0 15px red;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Press Start 2P", monospace;
 }
 
 @media screen and (max-width: 700px) {
@@ -56,6 +74,6 @@ body {
   }
   
   .box {
-    width: 90%;
+    width: 87%;
   }
 }
